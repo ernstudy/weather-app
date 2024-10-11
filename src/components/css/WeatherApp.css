@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 body {
-  background-image: linear-gradient(to right, #f3b07c, #fcd283);
+  width: 100%;
 }
 
-/* .weather_container {
-  box-shadow: -2rem -0.8rem 3rem -2rem;
+.weather_container {
+  box-shadow: -1rem -0.8rem 3rem -2rem;
   border-radius: 1rem;
-  background-image: linear-gradient(to top, #f3b07c, #fcd283);
-} */
+  padding: 20px;
+  min-height: 34rem;
+}

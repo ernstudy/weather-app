@@ -1,7 +1,7 @@
 import { Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 
-export default function WeatherForm({ onLoadInfo, error }) {
+export default function WeatherForm({ onLoadInfo, error, weather }) {
   // name of city
   const [city, setCity] = useState("");
 
@@ -23,12 +23,16 @@ export default function WeatherForm({ onLoadInfo, error }) {
         id="city"
         value={city}
         variant="outlined"
-        label="City"
+        label="City *"
         onChange={(e) => setCity(e.target.value)}
         error={error.error}
         helperText={error.message}
       />
-      <Button type="submit" variant="contained">
+      <Button
+        type="submit"
+        variant="contained"
+        // style={{ backgroundImage: weather.background }}
+      >
         Search
       </Button>
     </Box>
